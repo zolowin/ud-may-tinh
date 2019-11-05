@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Calculator </h2>
+    <form>
+        <input type="number" id="input1" value="">
+        <input type="number" id="input2" value="">
+    </form>
+    <br><br>
+    <button type="button" onclick="addition()">Addition(+)</button>
+    <button type="button" onclick="subtraction()">Subtraction(-)</button>
+    <button type="button" onclick="multiplication()">Multiplication(*)</button>
+    <button type="button" onclick="division()">Division(/)</button>
+    <p id='result'></p>
+    <script>
+        function addition() {
+            let input1 = parseFloat(document.getElementById('input1').value);
+            let input2 = parseFloat(document.getElementById('input2').value);
+            let addition = input1 + input2;
+            document.getElementById('result').innerHTML = 'Result Addition:' + addition;
+        }
+        function subtraction() {
+            let input1 = parseFloat(document.getElementById('input1').value);
+            let input2 = parseFloat(document.getElementById('input2').value);
+            let subtraction = input1 - input2;
+            document.getElementById('result').innerHTML = 'Result Subtraction:' + subtraction;
+        }
+        function multiplication() {
+            let input1 = parseFloat(document.getElementById('input1').value);
+            let input2 = parseFloat(document.getElementById('input2').value);
+            let multiplication = input1 * input2;
+            document.getElementById('result').innerHTML = 'Result Multiplication:' + multiplication;
+        }
+        function division() {
+            let input1 = parseFloat(document.getElementById('input1').value);
+            let input2 = parseFloat(document.getElementById('input2').value);
+            let division = input1 / input2;
+            document.getElementById('result').innerHTML = 'Result Division:' + division;
+        }
+
+    </script>
+</body>
+
+</html>
